@@ -1,0 +1,11 @@
+<body>
+  <div class=show_option><p>title:</p><%=@book.title%></div>
+  </br>
+  <div class=show_option><p>body:</p><%=@book.body%></div>
+  </br>
+  <div class="link show_option"><%=link_to "Edit",edit_book_path(@book.id) %>|<%=link_to "Back",books_path%></div>
+  </br>
+  <%= flash[:success] %>
+  <%= flash[:danger] %>
+</body>  
+  
